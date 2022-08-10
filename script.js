@@ -18,8 +18,8 @@ async function fetchAPI(location) {
 
   // Use ⬇this⬇ header with fetch method if you get any error with cors-anywhere
   // {headers: {
-    // 'x-requested-with': 'text/plain'
-   }}
+  //   'x-requested-with': 'text/plain'
+  // }}
 
   const res = await fetch(baseURL, {
     headers: {
@@ -40,7 +40,7 @@ function generateHTML(data) {
   <div class="more-info">
     <p>Humidity- ${data.current.humidity}%</p>
     <p>Wind Speed- ${data.current.wind_speed}km/h</p>
-    <!-- <p>Wind Dir- ${data.current.wind_dir}</p> -->
+   <!-- <p>Wind Dir- ${data.current.wind_dir}</p>  -->
     <p>Pressure- ${data.current.pressure}MB</p>
   </div>
   <div class="query">${data.request.query}</div>
